@@ -28,7 +28,7 @@ export function Timeline(){
         className={`timeline ${visible ? "animate" : ""}`}
         ref={timelineRef}>
                 <div class = "container-left">
-                    <img src = "./../../Textures/dot.jpg"></img>
+                    <img src = "Textures/dot.jpg"></img>
                     <div class = "text-box">
                         <h2>The Beginning</h2>
                         <p><small>2004.12.07</small></p>
@@ -39,7 +39,7 @@ export function Timeline(){
                 </div>
 
                 <div class = "container-right">
-                    <img src = "./../../Textures/dot.jpg"></img>
+                    <img src = "Textures/dot.jpg"></img>
                     <div class = "text-box">
                         <h2>The Beginning</h2>
                         <p><small>2004.12.07</small></p>
@@ -50,7 +50,7 @@ export function Timeline(){
                 </div>
 
                 <div class = "container-left">
-                    <img src = "./../../Textures/dot.jpg"></img>
+                    <img src = "Textures/dot.jpg"></img>
                     <div class = "text-box">
                         <h2>The Beginning</h2>
                         <p><small>2004.12.07</small></p>
@@ -60,7 +60,7 @@ export function Timeline(){
                 </div>
 
                 <div class = "container-right">
-                    <img src = "./../../Textures/dot.jpg"></img>
+                    <img src = "Textures/dot.jpg"></img>
                     <div class = "text-box">
                         <h2>The Beginning</h2>
                         <p><small>2004.12.07</small></p>
