@@ -6,7 +6,7 @@ export class Ground extends GrObject
     constructor()
     {
         let group = new T.Group()
-        let plane = new T.TextureLoader().load("Monopoly_textures/monopolyMap.jpg")
+        let plane = new T.TextureLoader().load("Monopoly_Textures/monopolyMap.jpg")
 
         let planeMesh = new T.Mesh(
             new T.PlaneGeometry(40, 40, 64),
