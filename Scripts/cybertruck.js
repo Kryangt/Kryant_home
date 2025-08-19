@@ -39,7 +39,7 @@ export function CyberTruck(canvas)
         constructor()
         {
     
-            let texturebody = new T.TextureLoader().load("../Textures/8/carBody.jpg")
+            let texturebody = new T.TextureLoader().load("Textures/8/carBody.jpg")
     
             texturebody.wrapS = T.RepeatWrapping;
             texturebody.wrapT = T.RepeatWrapping;

@@ -18,12 +18,12 @@ export class Dice extends GrObject
         let diceGeometry = new T.PlaneGeometry(3, 2);
 
         //load six faces
-        let one = new T.TextureLoader().load("Monopoly_textures/Dice/one.png");
-        let two = new T.TextureLoader().load("Monopoly_textures/Dice/two.png");
-        let three = new T.TextureLoader().load("Monopoly_textures/Dice/three.png");
-        let four = new T.TextureLoader().load("Monopoly_textures/Dice/four.png");
-        let five = new T.TextureLoader().load("Monopoly_textures/Dice/five.png");
-        let six = new T.TextureLoader().load("Monopoly_textures/Dice/six.png");
+        let one = new T.TextureLoader().load("Monopoly_Textures/Dice/one.png");
+        let two = new T.TextureLoader().load("Monopoly_Textures/Dice/two.png");
+        let three = new T.TextureLoader().load("Monopoly_Textures/Dice/three.png");
+        let four = new T.TextureLoader().load("Monopoly_Textures/Dice/four.png");
+        let five = new T.TextureLoader().load("Monopoly_Textures/Dice/five.png");
+        let six = new T.TextureLoader().load("Monopoly_Textures/Dice/six.png");
 
 
         let diceMaterial = new shaderMaterial("Shader/DiceVertex.vs", "Shader/DiceFragment.fs", {
