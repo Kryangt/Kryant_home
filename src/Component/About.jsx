@@ -99,7 +99,7 @@ export function About() {
         if (realPic === 1 && canvas) {
             const ctx = canvas.getContext("2d");
             const img = new Image();
-            img.src = "Textures/image.png"; // Path to your image
+            img.src = "Textures/image.png";
             img.onload = () => {
                 ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
                 ctx.drawImage(img, 100, 50, 300,400); // Draw the image
