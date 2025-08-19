@@ -203,12 +203,12 @@ export function CyberTruck(canvas)
     
     
     world.scene.background = new T.CubeTextureLoader().load([
-        "../Textures/8/px.png",
-        "../Textures/8/nx.png",
-        "../Textures/8/py.png",
-        "../Textures/8/ny.png",
-        "../Textures/8/pz.png",
-        "../Textures/8/nz.png",
+        "/Textures/8/px.png",
+        "/Textures/8/nx.png",
+        "/Textures/8/py.png",
+        "/Textures/8/ny.png",
+        "/Textures/8/pz.png",
+        "/Textures/8/nz.png",
     ])
     world.add(new CyberTruck())
     world.go();    
