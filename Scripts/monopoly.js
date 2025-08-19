@@ -47,12 +47,12 @@ export function Monopoly(canvas){
     main(world, highlightName);
     
     
-    let texture = new T.CubeTextureLoader().load(["/Scripts/RealProgram/textures/Environment/px.png",
-        "/Scripts/RealProgram/textures/Environment/nx.png",
-        "/Scripts/RealProgram/textures/Environment/py.png",
-        "/Scripts/RealProgram/textures/Environment/ny.png",
-        "/Scripts/RealProgram/textures/Environment/pz.png",
-        "/Scripts/RealProgram/textures/Environment/nz.png"
+    let texture = new T.CubeTextureLoader().load(["Monopoly_Textures/Environment/px.png",
+        "Monopoly_Textures/Environment/nx.png",
+        "Monopoly_Textures/Environment/py.png",
+        "Monopoly_Textures/Environment/ny.png",
+        "Monopoly_Textures/Environment/pz.png",
+        "Monopoly_Textures/Environment/nz.png"
     ])
     world.scene.background = texture
     ///////////////////////////////////////////////////////////////
