@@ -18,15 +18,15 @@ export class Dice extends GrObject
         let diceGeometry = new T.PlaneGeometry(3, 2);
 
         //load six faces
-        let one = new T.TextureLoader().load("/Scripts/RealProgram/textures/Dice/one.png");
-        let two = new T.TextureLoader().load("/Scripts/RealProgram/textures/Dice/two.png");
-        let three = new T.TextureLoader().load("/Scripts/RealProgram/textures/Dice/three.png");
-        let four = new T.TextureLoader().load("/Scripts/RealProgram/textures/Dice/four.png");
-        let five = new T.TextureLoader().load("/Scripts/RealProgram/textures/Dice/five.png");
-        let six = new T.TextureLoader().load("/Scripts/RealProgram/textures/Dice/six.png");
+        let one = new T.TextureLoader().load("Monopoly_textures/Dice/one.png");
+        let two = new T.TextureLoader().load("Monopoly_textures/Dice/two.png");
+        let three = new T.TextureLoader().load("Monopoly_textures/Dice/three.png");
+        let four = new T.TextureLoader().load("Monopoly_textures/Dice/four.png");
+        let five = new T.TextureLoader().load("Monopoly_textures/Dice/five.png");
+        let six = new T.TextureLoader().load("Monopoly_textures/Dice/six.png");
 
 
-        let diceMaterial = new shaderMaterial("/Scripts/RealProgram/Shader/DiceVertex.vs", "/Scripts/RealProgram/Shader/DiceFragment.fs", {
+        let diceMaterial = new shaderMaterial("Shader/DiceVertex.vs", "Shader/DiceFragment.fs", {
             side: T.DoubleSide,
             uniforms: {
                 horizontal: {value: 3},
@@ -49,7 +49,7 @@ export class Dice extends GrObject
 
         let randomIndex = Math.floor(Math.random() * 5) + 1;
 
-        let highlightMaterial = new shaderMaterial("/Scripts/RealProgram/Shader/DiceHighlight.vs", "/Scripts/RealProgram/Shader/DiceHighlight.fs",{
+        let highlightMaterial = new shaderMaterial("Shader/DiceHighlight.vs", "Shader/DiceHighlight.fs",{
             transparent: true,
             side: T.DoubleSide,
             uniforms:{

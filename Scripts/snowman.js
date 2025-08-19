@@ -30,7 +30,7 @@ export function Snowman(canvas){
     sunLight.position.set(10, 0, 0);
 
 
-    let snowGround = new T.TextureLoader().load("../Textures/1/Snow bump.jpg")
+    let snowGround = new T.TextureLoader().load("Textures/1/Snow bump.jpg")
     let groundBox = new T.BoxGeometry(20, 1, 20);
     let groundMesh = new T.Mesh(
             groundBox,
@@ -39,7 +39,7 @@ export function Snowman(canvas){
 
     groundMesh.position.y = -0.5;
 
-    let soil = new T.TextureLoader().load("../Textures/1/Soil.jpg")
+    let soil = new T.TextureLoader().load("Textures/1/Soil.jpg")
     soil.wrapS = T.RepeatWrapping;
     soil.wrapT = T.RepeatWrapping;
 
@@ -81,7 +81,7 @@ export function Snowman(canvas){
 
     scene.add(snow1)
 
-    let branch = new T.TextureLoader().load("../Textures/1/branch.jpg")
+    let branch = new T.TextureLoader().load("Textures/1/branch.jpg")
     branch.wrapS = T.MirroredRepeatWrapping;
     branch.wrapT = T.MirroredRepeatWrapping;
 
@@ -145,7 +145,7 @@ export function Snowman(canvas){
 
     //load nose
     let loader = new OBJLoader();
-    let nose = loader.loadAsync("../Textures/1/Carrot.obj")
+    let nose = loader.loadAsync("Textures/1/Carrot.obj")
 
     nose.then((obj)=>{
 
@@ -157,7 +157,7 @@ export function Snowman(canvas){
         obj.rotateY(-30 * Math.PI/180)
         obj.position.y = 0.2;
 
-        let texture = new T.TextureLoader().load("../Textures/1/CarrotTex.png")
+        let texture = new T.TextureLoader().load("Textures/1/CarrotTex.png")
         texture.wrapS = T.RepeatWrapping;
         texture.wrapT = T.RepeatWrapping;
         texture.repeat.set(5,5)
@@ -180,13 +180,13 @@ export function Snowman(canvas){
     //load glasses
 
     let glassesMaterial = new MTLLoader();
-    glassesMaterial.load("../Textures/1/sunglasses.mtl", (material)=>
+    glassesMaterial.load("Textures/1/sunglasses.mtl", (material)=>
     {
         material.preload();
 
         let objLoader = new OBJLoader();
         objLoader.setMaterials(material);
-        objLoader.loadAsync("../Textures/1/sunglasses.obj")
+        objLoader.loadAsync("Textures/1/sunglasses.obj")
             .then((obj) => {
                 obj.scale.set(10, 10, 10); 
                 obj.position.set(0, 0.45, 0.5); 
@@ -249,13 +249,13 @@ export function Snowman(canvas){
 
     //load cigarette
     let cigaretteLoader = new MTLLoader();
-    cigaretteLoader.load("../Textures/1/Tobacco Pipe.mtl", (material)=>
+    cigaretteLoader.load("Textures/1/Tobacco Pipe.mtl", (material)=>
     {
         material.preload();
 
         let loader = new OBJLoader();
         loader.setMaterials(material);
-        loader.loadAsync("../Textures/1/Tobacco Pipe.obj").then((obj)=>{
+        loader.loadAsync("Textures/1/Tobacco Pipe.obj").then((obj)=>{
             obj.scale.set(0.025,0.025,0.025)
             let quaternion = new T.Quaternion();
             //quaternion.setFromAxisAngle(new T.Vector3(0, 0, 1), Math.PI/2);

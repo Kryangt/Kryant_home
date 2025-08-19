@@ -95,7 +95,7 @@ export class DetectionPoint extends GrObject
 
                 let buildingNum = Math.floor(Math.random() * 3) + 1; //ranging from 1-3
                 //tell the stepWorld function to "build" the building
-                this.loadObject(`/Scripts/RealProgram/Object/Building${buildingNum}/Texture.mtl`, `/Scripts/RealProgram/Object/Building${buildingNum}/object.gltf`, buildingNum)
+                this.loadObject(`Object/Building${buildingNum}/Texture.mtl`, `Object/Building${buildingNum}/object.gltf`, buildingNum)
                 //load buildings
                 Character.pause = true //pause the game to finish the animation
                 this.signal = 1 
@@ -142,7 +142,7 @@ export class DetectionPoint extends GrObject
 
         this.uniforms = uniforms
 
-        let planeMaterial = new shaderMaterial("/Scripts/RealProgram/Shader/FlagVertex.vs", "/Scripts/RealProgram/Shader/FlagFragment.fs", {
+        let planeMaterial = new shaderMaterial("Shader/FlagVertex.vs", "Shader/FlagFragment.fs", {
             side: T.DoubleSide,
             uniforms: this.uniforms
         })

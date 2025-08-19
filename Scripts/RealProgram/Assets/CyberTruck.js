@@ -6,7 +6,7 @@ export class CyberTruck extends GrObject
     constructor()
     {
 
-        let texturebody = new T.TextureLoader().load("/Scripts/RealProgram/textures/carBody.jpg")
+        let texturebody = new T.TextureLoader().load("Monopoly_Textures/carBody.jpg")
 
         texturebody.wrapS = T.RepeatWrapping;
         texturebody.wrapT = T.RepeatWrapping;
