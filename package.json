@@ -1,6 +1,6 @@
 {
   "name": "personal-website",
-  "homepage": "https://kryangt.github.io/Kryant_home/",  
+  "homepage": "https://kryangt.github.io/kryant_home/",  
   "private": "true",
   "version": "0.0.0",
   "type": "module",
@@ -8,9 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
